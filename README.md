@@ -13,7 +13,7 @@ Di bawah ini adalah ER Diagram.
 
 Di bawah ini adalah Flowchart.
 
-[ER Diagram](./dokumen/flowchart.png)
+[Flowchart Diagram](./dokumen/flowchart.png)
 
 ## Fitur Sistem
 

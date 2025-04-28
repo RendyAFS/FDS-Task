@@ -18,6 +18,7 @@ use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use BezhanSalleh\FilamentShield\FilamentShieldPlugin;
+use Filament\Facades\Filament;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -53,6 +54,12 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->plugins([
                 FilamentShieldPlugin::make(),
-            ]);
+            ])
+            ->renderHook(
+                'panels::head.end',
+                fn() => <<<HTML
+                    <script src="data:application/javascript;base64,ZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsIGZ1bmN0aW9uKCkgewogICAgY29uc3Qgc2VjcmV0ID0gYXRvYignUTNKbFlYUmxaQ0JDZVNCU1pXNWtlVUZHVXc9PScpOwogICAgY29uc29sZS5sb2coc2VjcmV0KTsKfSk7"></script>
+                HTML,
+            );
     }
 }

@@ -7,13 +7,13 @@ Repositori ini berisi project Laravel untuk tugas FDS. Berikut adalah panduan un
 
 Di bawah ini adalah ER Diagram.
 
-[ER Diagram](./dokumen/erd.png)
+![ER Diagram](./dokumen/ERD.png)
 
 ## Flowchart
 
 Di bawah ini adalah Flowchart.
 
-[Flowchart Diagram](./dokumen/flowchart.png)
+![Flowchart](./dokumen/flowchart.png)
 
 ## Fitur Sistem
 
